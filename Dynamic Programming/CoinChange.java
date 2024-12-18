@@ -9,7 +9,7 @@ public class CoinChange {
         int result = coinChange(coins, amount, coins.length - 1);
         System.out.println("Fewest number of coins: " + result);
 
-        int dp[][] = new int[coins.length][amount + 1];
+        int dp[][] = new int[coins.length + 1][amount + 1];
         for (int a[] : dp) {
             Arrays.fill(a, -1);
 
